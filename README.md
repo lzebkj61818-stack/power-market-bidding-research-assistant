@@ -78,34 +78,6 @@
 Use $power-market-bidding-research-assistant to interpret a market report, audit a bidding strategy, or review a backtest before forming candidate bidding scenarios.
 ```
 
-## 隐私与脱敏原则
-
-这个仓库默认按“可公开发布”设计，以下内容不应进入开源版本：
-
-- 数据库连接、密码、令牌、主机名、内网域名
-- 私有数据源名称、内部系统代号、表名、字段名
-- 可反推出区域、主体、交易对象身份的专有名词
-- 原始日报截图、原始样本、回测明细、生产输出
-- 私有阈值、私有规则口径、内部执行路径
-
-建议统一改写为这类占位表达：
-
-- `region_x`
-- `source_a`
-- `entity_y`
-- `table_feature_hourly`
-- `YYYY-MM-DD`
-
-更细的发布前检查规则见 [references/privacy-and-sanitization.md](./references/privacy-and-sanitization.md)。
-
-## 发布前最小检查清单
-
-1. 确认没有密码、连接串、主机名、令牌
-2. 确认没有真实区域名、主体名、系统名、数据源名
-3. 确认没有 `.csv`、`.xlsx`、`.parquet`、`.db` 等真实数据文件
-4. 确认示例中的日期、路径、阈值、字段名不会暴露内部细节
-5. 确认所有示例都只是方法演示，而不是生产结果复述
-
 ## 声明
 
 这是一个研究辅助 skill，不是自动申报系统。
