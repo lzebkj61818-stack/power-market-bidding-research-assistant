@@ -1,0 +1,7 @@
+interface:
+  display_name: "Power Market Research Assistant"
+  short_description: "Research and review for bidding analysis"
+  default_prompt: "Use $power-market-bidding-research-assistant to interpret a market report, audit a bidding strategy, or review a backtest before forming candidate bidding scenarios."
+
+policy:
+  allow_implicit_invocation: true
