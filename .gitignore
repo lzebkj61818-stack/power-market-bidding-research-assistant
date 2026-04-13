@@ -1,0 +1,60 @@
+# Secrets and local credentials
+.env
+.env.*
+*.env
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+secrets/
+private/
+credentials/
+
+# Local configs that often contain hosts, users, or tokens
+config.local.*
+settings.local.*
+*.secret.*
+
+# Data, outputs, and analysis artifacts
+data/
+dataset/
+datasets/
+input/
+inputs/
+output/
+outputs/
+report/
+reports/
+artifact/
+artifacts/
+cache/
+tmp/
+temp/
+logs/
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.parquet
+*.feather
+*.orc
+*.db
+*.sqlite
+*.sqlite3
+*.duckdb
+*.bak
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Editors and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
